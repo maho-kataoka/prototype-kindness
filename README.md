@@ -62,4 +62,37 @@
   - 文字数制限：長くても50文字以内？
   - 備考：カードの形で表示
 
-
+## ディレクトリ構造
+prototype-kindness/
+├── README.md                          
+├── settings.gradle.kts                # プロジェクト設定
+├── build.gradle.kts                   # ルートビルド設定
+├── gradle.properties                  # Gradle設定
+├── local.properties                   # ローカル環境設定（自動生成）
+├── gradlew                            # Gradleラッパー（Unix）
+├── gradlew.bat                        # Gradleラッパー（Windows）
+├── gradle/
+│   └── wrapper/
+│       ├── gradle-wrapper.jar
+│       └── gradle-wrapper.properties
+└── app/
+├── build.gradle.kts               # アプリモジュールのビルド設定
+├── proguard-rules.pro             # ProGuard設定
+└── src/
+└── main/
+├── AndroidManifest.xml    # アプリマニフェスト
+├── kotlin/
+│   └── com/
+│       └── example/
+│           └── kindness/
+│               └── MainActivity.kt
+└── res/
+├── values/
+│   ├── strings.xml
+│   ├── colors.xml
+│   └── themes.xml
+├── mipmap-xxxhdpi/    # アプリアイコン
+├── mipmap-xxhdpi/
+├── mipmap-xhdpi/
+├── mipmap-hdpi/
+└── mipmap-mdpi/
